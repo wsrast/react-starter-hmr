@@ -2,3 +2,11 @@
 ___
 
 Simple react.js starter project
+
+ 
+Setup
+---
+ 
+```
+npm install
+```

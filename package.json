@@ -1,0 +1,20 @@
+{
+  "name": "react-starter",
+  "version": "1.0.0",
+  "description": "Simple react.js starter project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/wsrast/react-starter.git"
+  },
+  "keywords": [],
+  "author": "Wesley Rast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wsrast/react-starter/issues"
+  },
+  "homepage": "https://github.com/wsrast/react-starter#readme"
+}
