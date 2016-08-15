@@ -41,8 +41,8 @@ npm run compile
 Left To Do
 ---
 
-1. Set up another repo with more common functionality added: HMR, CSS processor, Routing, Redux, Server
-Rendering, Database (Mongo) connectivity, Image sizing processor.
+1. Set up another repo with more common functionality added: CSS processor, Routing, Redux, Server
+Rendering, Database (Mongo) connectivity, Image sizing processor, autoprefixer.
 2. Needs LESS support. Working with straight CSS is painful after you've worked with LESS or SASS.
 3. Needs routing support. I'm surprised this wasn't included in this bare-bones template. Any app without
 it is pretty useless.
