@@ -1,7 +1,7 @@
 {
-  "name": "react-starter",
+  "name": "react-starter-hmr",
   "version": "1.0.0",
-  "description": "Simple react.js starter project",
+  "description": "Simple react.js starter project with HMR",
   "main": "index.js",
   "scripts": {
     "compile": "webpack",
