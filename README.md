@@ -1,7 +1,11 @@
 react-starter
 ===
 
-Simple react.js starter project
+Simple react.js starter project based off of Andrew Farmer's [excellent
+tutorial](https://github.com/ahfarmer/minimal-react-starter). I recommend you
+check it out if any of the source files here are confusing to you. I've made a
+few changes to convert some of the source to ES6 that the original tutorial
+had written in ES5.
 
 
 Usage
