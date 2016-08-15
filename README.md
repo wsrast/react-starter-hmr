@@ -9,6 +9,7 @@ had written in ES5.
 
 This version of the project adds hot module replacement as a convenience. The
 original used autorefresh, which is something that becomes tedious in a real app.
+You can verify that the HMR tooling is working by looking in your browser's console.
 
 
 Usage

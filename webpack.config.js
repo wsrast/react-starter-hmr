@@ -1,9 +1,13 @@
 var path = require('path'),
+	webpack = require('webpack'),
 	config = {
 		"_comment1": "This is the path to your client-side JS folder. Must be absolute path.",
 		context: path.join(__dirname, 'src'),
 		"_comment2": "This is the entry point for your application",
-		entry: './main.js',
+		entry: [
+			'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
+			'./main.js'
+		],
 		output: {
 			path: path.join(__dirname, 'www'),
 			filename: 'bundle.js'
@@ -14,7 +18,7 @@ var path = require('path'),
 				{
 					test: /\.js$/,
 					exclude: /node_modules/,
-					loaders: ['babel']
+					loaders: ['react-hot', 'babel']
 				}
 			]
 		},
@@ -29,7 +33,12 @@ var path = require('path'),
 			root: [
 				path.join(__dirname, 'node_modules')
 			]
-		}
+		},
+		plugins: [
+			new webpack.optimize.OccurenceOrderPlugin(),
+			new webpack.HotModuleReplacementPlugin(),
+			new webpack.NoErrorsPlugin()
+		]
 	};
 
 module.exports = config;

@@ -5,6 +5,7 @@
 
 const express = require('express'),
 	webpackDevMiddleware = require('webpack-dev-middleware'),
+	webpackHotMiddleware = require('webpack-hot-middleware'),
 	webpack = require('webpack'),
 	webpackConfig = require('./webpack.config'),
 	app = express(),
@@ -20,6 +21,12 @@ app.use(webpackDevMiddleware(compiler, {
 		colors: true
 	},
 	historyApiFallback: true
+}));
+
+app.use(webpackHotMiddleware(compiler, {
+	log: console.log,
+	path: '/__webpack_hmr',
+	heartbeat: 10 * 1000
 }));
 
 const server = app.listen(3000, function () {
