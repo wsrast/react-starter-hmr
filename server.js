@@ -1,8 +1,6 @@
 /**
  * Created by Wes on 8/15/2016.
  */
-'use strict';
-
 const express = require('express'),
 	webpackDevMiddleware = require('webpack-dev-middleware'),
 	webpackHotMiddleware = require('webpack-hot-middleware'),
